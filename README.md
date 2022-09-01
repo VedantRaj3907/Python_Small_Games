@@ -53,9 +53,82 @@ You Got 5
 I Got 3
 ```
 
+
+# Tic-Tac-Toe
+
+
+
+
+
+
+![Logo](https://ui4free.com/storage/public/images/free-figma-game-tic-tac-toe_1635143619.jpg)
+
+
+## Intro to the Game
+
+- We Create a Dictonary of 9 positions like this
+```bash
+  theBoard = {'1': ' ' , '2': ' ' , '3': ' ' ,
+            '4': ' ' , '5': ' ' , '6': ' ' ,
+            '7': ' ' , '8': ' ' , '9': ' ' }
+```
+- We will Print our Board using the following Function
+```bash
+  def printBoard(board):
+    print(" _"*3)
+    print('|'+board['1'] + '|' + board['2'] + '|' + board['3']+"|"+"\t\t1"+'|'+'2'+'|'+'3')
+    print('|-+-+-|\t\t-+-+-')
+    print('|'+board['4'] + '|' + board['5'] + '|' + board['6']+"|"+'\t\t4'+'|'+'5'+'|'+'6')
+    print('|-+-+-|\t\t-+-+-')
+    print('|'+board['7'] + '|' + board['8'] + '|' + board['9']+'|'+'\t\t7'+'|'+'8'+'|'+'9')
+    print("¯"*7)
+```
+- Which looks like this at the OUTPUT
+```bash
+ _ _ _
+| | | |         1|2|3
+|-+-+-|         -+-+-
+| | | |         4|5|6
+|-+-+-|         -+-+-
+| | | |         7|8|9
+¯¯¯¯¯¯¯
+```
+- We will Switch between the Users of :x: and :o:
+
+- Check of will if any 3 adjecent are of :x: or :o: output looks like this
+```bash
+    ¯¯¯¯¯¯¯
+O Turn (choose Position):- 8
+ _ _ _
+ _ _ _
+|X|O| |         1|2|3
+|-+-+-|         -+-+-
+|X|O|X|         4|5|6
+|-+-+-|         -+-+-
+| |O| |         7|8|9
+¯¯¯¯¯¯¯
+
+Game Over.
+
+ * O won. *
+Do want to play Again?(y/n) :-
+
+```
+- Continue the Game till user presses "n" or "NO"
+- At last after the User will exit we will print the Score for him if he won or lose
+```bash
+***************************************************************************
+User won
+The scores are
+
+You Got 5
+I Got 3
+```
+
 ## Support
 
 Please Give :heart: Star or Follow if you Like! :rosette: :cherry_blossom:
+
 
 
 
